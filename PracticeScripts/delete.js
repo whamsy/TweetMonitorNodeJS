@@ -3,7 +3,7 @@
  */
 
 
-var client = require('./connection.js');
+var client = require('./../TweetMap/connection.js');
 
 client.indices.delete({
     index: 'gov'

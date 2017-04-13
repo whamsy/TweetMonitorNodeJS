@@ -17,7 +17,7 @@ var addX = function(value) {
 
 
 
-var client = require('./connection.js')
+var client = require('./../TweetMap/connection.js')
 var outArray = [];
 var tempArray = [];
 
