@@ -1,0 +1,15 @@
+{
+  "name": "tweet_trends",
+  "version": "1.0.0",
+  "description": "twitter trends",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log('hello')"
+  },
+  "author": "Vamsy",
+  "license": "ISC",
+  "dependencies": {
+    "elasticsearch": "^13.0.0-rc2",
+    "express": "^4.15.2"
+  }
+}
