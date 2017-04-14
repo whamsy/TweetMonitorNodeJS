@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c27a3a9-c1ad-4c42-bef4-9e476bd71436" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/index.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/connection.js" afterPath="$PROJECT_DIR$/TweetMap/connection.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/delete.js" afterPath="$PROJECT_DIR$/PracticeScripts/delete.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/TweetMap/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/info.js" afterPath="$PROJECT_DIR$/PracticeScripts/info.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/misc.js" afterPath="$PROJECT_DIR$/PracticeScripts/misc.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/search.js" afterPath="$PROJECT_DIR$/TweetMap/search.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/testaddindices.js" afterPath="$PROJECT_DIR$/PracticeScripts/testaddindices.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="3c27a3a9-c1ad-4c42-bef4-9e476bd71436" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -310,12 +299,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491848059178</updated>
-      <workItem from="1491848061595" duration="24301000" />
+      <workItem from="1491848061595" duration="24614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24301000" />
+    <option name="totallyTimeSpent" value="24614000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
