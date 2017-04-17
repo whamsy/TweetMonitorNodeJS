@@ -9,7 +9,9 @@
   "author": "Vamsy",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.41.0",
     "elasticsearch": "^13.0.0-rc2",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "sqs-consumer": "^3.5.0"
   }
 }
