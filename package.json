@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.41.0",
+    "aws-sns-publish": "^3.0.0",
     "elasticsearch": "^13.0.0-rc2",
     "express": "^4.15.2",
     "monkeylearn": "^0.1.11",
