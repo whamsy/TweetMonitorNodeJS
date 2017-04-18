@@ -10,9 +10,9 @@ module.exports.Search = function(searchData, callback) {
     var tempArray = [];
 
     client.search({
-        index: 'tweetmap',
+        index: 'tweetmap_final2',
         size: 10000,
-        type: 'tweetdata',
+        type: 'tweetdata_final',
         q: searchData
         // body: {
         //     query: {

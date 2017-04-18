@@ -14,7 +14,7 @@
 // // console.log(search('trump').length);
 
 
-var misc = require('./misc');
+// var misc = require('./misc');
 // var x = 10;
 // console.log(misc.searchResult(x));
 
@@ -25,6 +25,20 @@ var misc = require('./misc');
 //     });
 // });
 
-misc.Search('*', function(data) {
-    console.log(data.length);
+// misc.Search('*', function(data) {
+//     console.log(data.length);
+// });
+
+
+var client = require('./../TweetMap/connection.js');
+
+client.indices.create({
+    index: 'tweetmap_final2',
+},function(err,resp,status) {
+    if(err) {
+        console.log(err);
+    }
+    else {
+        console.log("create",resp);
+    }
 });
