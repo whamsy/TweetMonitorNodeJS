@@ -15,7 +15,22 @@
         var textinterval;
         var interval4;
 
+        function marker_color(marker,sentiment) {
+            if(sentiment === 'positive'){
+                marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png')
+            }
+            else if(sentiment === "negative"){
+                marker.setIcon('http://maps.google.com/mapfiles/ms/icons/red-dot.png')
+            }else {
+                marker.setIcon('http://maps.google.com/mapfiles/ms/icons/yellow-dot.png')
+            }
+
+            return marker;
+        }
+
         $(document).ready(function(){
+
+
 
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 2,
@@ -43,14 +58,16 @@
                             position: new google.maps.LatLng(data[i][0], data[i][1]),
                             map: map
                         });
-                        if(data[i][5]== 'positive'){
-                            marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png')
-                        }
-                        else if(data[i][5]== "negative"){
-                            marker.setIcon('http://maps.google.com/mapfiles/ms/icons/red-dot.png')
-                        }else {
-                            marker.setIcon('http://maps.google.com/mapfiles/ms/icons/yellow-dot.png')
-                        }
+
+                        marker = marker_color(marker,data[i][5]);
+//                        if(data[i][5]== 'positive'){
+//                            marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png')
+//                        }
+//                        else if(data[i][5]== "negative"){
+//                            marker.setIcon('http://maps.google.com/mapfiles/ms/icons/red-dot.png')
+//                        }else {
+//                            marker.setIcon('http://maps.google.com/mapfiles/ms/icons/yellow-dot.png')
+//                        }
                         gmarkers.push(marker);
 
                         google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
@@ -95,22 +112,22 @@
                                     map: map
                                 });
 
-                                if(data[i][4]== 'positive'){
-                                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png')
-                                }
-                                else if(data[i][4]== "negative"){
-                                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/red-dot.png')
-                                }else {
-                                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/yellow-dot.png')
-                                }
+                                marker = marker_color(marker,data[i][5]);
+
+//                                if(data[i][5]== 'positive'){
+//                                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png')
+//                                }
+//                                else if(data[i][5]== "negative"){
+//                                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/red-dot.png')
+//                                }else {
+//                                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/yellow-dot.png')
+//                                }
 
                                 gmarkers.push(marker);
 
                                 google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
                                     return function() {
-                                        var contentString =
-                                            '<h4>Tweet by :</h4>'+String(data[i][3])+
-                                            '<p>'+String(data[i][2])+'</p>';
+                                        var contentString ='<IMG WIDTH="50" ALIGN="Left" SRC="'+String(data[i][4])+'">'+'<h4>Tweet by :</h4>'+String(data[i][3])+'<p>'+String(data[i][2])+'<br>';
                                         infowindow.setContent(contentString)
                                         infowindow.open(map, marker);
                                     }
@@ -161,14 +178,16 @@
                                     map: map
                                 });
 
-                                if(data[i][4]== 'positive'){
-                                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png')
-                                }
-                                else if(data[i][4]== "negative"){
-                                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/red-dot.png')
-                                }else {
-                                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/yellow-dot.png')
-                                }
+                                marker = marker_color(marker,data[i][5]);
+
+//                                if(data[i][5]== 'positive'){
+//                                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png')
+//                                }
+//                                else if(data[i][5]== "negative"){
+//                                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/red-dot.png')
+//                                }else {
+//                                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/yellow-dot.png')
+//                                }
 
                                 gmarkers.push(marker);
 
@@ -225,7 +244,7 @@
 
 <body>
 <center>
-    <h2><a href="http://fontmeme.com/star-wars-font/"><img src="http://fontmeme.com/permalink/170312/05eb2eb2d9dbcab843a10a2e50bebcbd.png" alt="star-wars-font" border="0"></a></h2>
+    <h2><img src="http://fontmeme.com/permalink/170312/05eb2eb2d9dbcab843a10a2e50bebcbd.png" alt="star-wars-font" border="0"></a></h2>
     <main>
         <label>Input :</label>
         <input type="text" id="text" name="name" value="" />

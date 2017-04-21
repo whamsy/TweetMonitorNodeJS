@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c27a3a9-c1ad-4c42-bef4-9e476bd71436" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TweetMap/index2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeScripts/testaddindices.js" afterPath="$PROJECT_DIR$/PracticeScripts/testaddindices.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TweetMap/index.html" afterPath="$PROJECT_DIR$/TweetMap/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TweetMap/index.js" afterPath="$PROJECT_DIR$/TweetMap/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TweetMap/search.js" afterPath="$PROJECT_DIR$/TweetMap/search.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,8 +40,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TweetMap/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="57" column="104" lean-forward="false" selection-start-line="57" selection-start-column="104" selection-end-line="57" selection-end-column="104" />
+            <state relative-caret-position="516">
+              <caret line="246" column="8" lean-forward="false" selection-start-line="246" selection-start-column="8" selection-end-line="246" selection-end-column="8" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -372,12 +367,12 @@
       <workItem from="1491848061595" duration="24614000" />
       <workItem from="1492402274290" duration="361000" />
       <workItem from="1492402948522" duration="10659000" />
-      <workItem from="1492790832655" duration="6048000" />
+      <workItem from="1492790832655" duration="6854000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41682000" />
+    <option name="totallyTimeSpent" value="42488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -671,8 +666,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TweetMap/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="57" column="104" lean-forward="false" selection-start-line="57" selection-start-column="104" selection-end-line="57" selection-end-column="104" />
+        <state relative-caret-position="516">
+          <caret line="246" column="8" lean-forward="false" selection-start-line="246" selection-start-column="8" selection-end-line="246" selection-end-column="8" />
           <folding>
             <element signature="n#style#0;n#div#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
