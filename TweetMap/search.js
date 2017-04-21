@@ -10,9 +10,9 @@ module.exports.Search = function(searchData, callback) {
     var tempArray = [];
 
     client.search({
-        index: 'tweetmap_final2',
+        index: 'tweetmap_with_sentiment',
         size: 10000,
-        type: 'tweetdata_final',
+        type: 'tweetdata_with_sentiment',
         q: searchData
         // body: {
         //     query: {
@@ -22,13 +22,19 @@ module.exports.Search = function(searchData, callback) {
         //     }
         // }
     }).then(function(resp) {
-        console.log('test_success1');
+        console.log('Search Result for: ',searchData,' from Elasticsearch');
+        console.log('Results being added to an array');
         resp.hits.hits.forEach(function(hit){
             tempArray = [];
-            tempArray.push(hit['_source']['geo']['coordinates'][0],hit['_source']['geo']['coordinates'][1],hit['_source']['text'],hit['_source']['user']['name'])
+
+            // tempArray.push(hit)
+            tempArray.push(hit['_source']['coordinates']['lat'],hit['_source']['coordinates']['lng'])
+            tempArray.push(hit['_source']['text'])
+            tempArray.push(hit['_source']['user']['name'],hit['_source']['user']['profile_image_url_https'])
+            tempArray.push(hit['_source']['sentiment']['label'])
             outArray.push(tempArray);
         })
-        console.log(outArray.length);
+        console.log("Array of size ",outArray.length," sent to frontend\n\n");
         callback(outArray);
     }, function (err) {
         callback(err.message)
