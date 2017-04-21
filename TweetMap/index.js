@@ -18,7 +18,7 @@ app.get('/search', function (req, res) {
 
     var text1 = req.query.q;
 
-    console.log(text1);
+    console.log("Received frontend request to search for: ",text1);
 
     search.Search(text1, function(data) {
         res.send(data);
@@ -97,11 +97,11 @@ var app2 = Consumer.create({
 
         // console.log("2nd Queue output is of type ", typeof final_data);
 
-        console.log(final_data);
+        // console.log(final_data);
 
         client.index({
-            index: 'tweetmap_final2',
-            type: 'tweetdata_final',
+            index: 'tweetmap_with_sentiment',
+            type: 'tweetdata_with_sentiment',
             body: final_data
         },function(err,resp,status) {
             // console.log(resp);
