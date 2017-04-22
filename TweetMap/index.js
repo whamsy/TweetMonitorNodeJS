@@ -77,9 +77,6 @@ var app1 = Consumer.create({
             var senti_sns_output = JSON.stringify(tweetdata);
             var subject_txt = "Processed Tweet "+tweetdata['id'];
 
-            // console.log(senti_sns_output['id'])
-            // console.log(JSON.parse(senti_sns_output));
-
             Publisher(senti_sns_output, {arn: 'arn:aws:sns:us-west-2:453367379586:SentiTweet'});
 
         });
@@ -95,10 +92,6 @@ var app2 = Consumer.create({
 
         var final_data = JSON.parse(JSON.parse(message.Body).Message);
 
-        // console.log("2nd Queue output is of type ", typeof final_data);
-
-        // console.log(final_data);
-
         client.index({
             index: 'tweetmap_with_sentiment',
             type: 'tweetdata_with_sentiment',
@@ -107,11 +100,7 @@ var app2 = Consumer.create({
             // console.log(resp);
         });
 
-
-
-
         done();
-
     }
 });
 
@@ -126,7 +115,3 @@ app2.on('error', function (err) {
 });
 
 app2.start();
-
-
-
-
