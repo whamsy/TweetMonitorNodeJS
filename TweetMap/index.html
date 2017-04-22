@@ -50,27 +50,16 @@
                         if(data['count'] > curr){
                             console.log(data['count'])
                             $("#countdiv").empty()
-                            $("#countdiv").append('<p style="color:red; font-size:18px;"> Total Tweets in the System as of now: '+(data['count'])+'</p>')
+                            $("#countdiv").append('<p style="color:#CFCECF; font-size:18px;"> Total Tweets in the System as of now: '+(data['count'])+'</p>')
                             $("#countdiv").shake();
 
                             curr = data['count']
 
                         }
-
-
-
-
-
-
-//                        $("#countdiv").shake();
                     }
                 });
             }, 2000);
 
-//            var btn = document.createElement("BUTTON");
-//            var t = document.createTextNode("CLICK ME");
-//            btn.appendChild(t);
-//            document.body.appendChild(btn);
 
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 2,
@@ -100,14 +89,7 @@
                         });
 
                         marker = marker_color(marker,data[i][5]);
-//                        if(data[i][5]== 'positive'){
-//                            marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png')
-//                        }
-//                        else if(data[i][5]== "negative"){
-//                            marker.setIcon('http://maps.google.com/mapfiles/ms/icons/red-dot.png')
-//                        }else {
-//                            marker.setIcon('http://maps.google.com/mapfiles/ms/icons/yellow-dot.png')
-//                        }
+
                         gmarkers.push(marker);
 
                         google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
@@ -252,7 +234,7 @@
 
 <style>
     body {
-        background-image: url("https://www.xmple.com/wallpaper/blue-gradient-white-linear-1920x1080-c2-87cefa-ffffff-a-105-f-14.svg");
+        background-color: #333333;
     }
     h2 {
 
@@ -260,12 +242,12 @@
     }
     label{
         color: white;
-        font-size: 25px
+        font-size: 18px
     }
 
 
     .button {
-        background-color:  #008CBA;
+        background-color:  #051028;
         border: none;
         color: white;
         padding: 10px 25px;
@@ -300,7 +282,8 @@
             <!--document.body.appendChild(btn);-->
         <!--</script>-->
         <!-- <button onclick="renderSpecific()">Search!</button> -->
-        <div id="map" style="width: 1350px; height: 800px;"></div>
+        <div id="map" style="width: 1350px; height: 500px; background-color: #051028"></div>
+        <p style="color:#CFCECF; font-size:15px;"> Markers Legend: <span style="color:#24E54A;">Green: Positive, </span><span style="color:#F9645A;">Red: Negative, </span><span style="color:#FBF164;">Yellow: Neutral</span></p>
     </main>
 </center>
 </body>

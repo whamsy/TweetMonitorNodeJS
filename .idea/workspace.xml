@@ -40,11 +40,15 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TweetMap/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="77" column="1440" lean-forward="false" selection-start-line="77" selection-start-column="1440" selection-end-line="77" selection-end-column="1440" />
+            <state relative-caret-position="528">
+              <caret line="285" column="67" lean-forward="false" selection-start-line="285" selection-start-column="67" selection-end-line="285" selection-end-column="67" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1492815040000" expanded="true" signature="1899:1925" ph="..." />
+                <element signature="n#style#0;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#2;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1492816936000" expanded="true" signature="1899:1929" ph="..." />
               </folding>
             </state>
           </provider>
@@ -120,6 +124,11 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>map</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -368,12 +377,12 @@
       <workItem from="1491848061595" duration="24614000" />
       <workItem from="1492402274290" duration="361000" />
       <workItem from="1492402948522" duration="10659000" />
-      <workItem from="1492790832655" duration="10026000" />
+      <workItem from="1492790832655" duration="11552000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45660000" />
+    <option name="totallyTimeSpent" value="47186000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -416,7 +425,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#1;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1492815040000" expanded="true" signature="1899:1925" ph="..." />
+            <element signature="n#style#0;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1492816936000" expanded="true" signature="1899:1929" ph="..." />
           </folding>
         </state>
       </provider>
@@ -499,7 +512,11 @@
           <caret line="131" column="30" lean-forward="false" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#div#1;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1492815040000" expanded="true" signature="1899:1925" ph="..." />
+            <element signature="n#style#0;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1492816936000" expanded="true" signature="1899:1929" ph="..." />
           </folding>
         </state>
       </provider>
@@ -542,7 +559,11 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#1;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1492815040000" expanded="true" signature="1899:1925" ph="..." />
+            <element signature="n#style#0;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1492816936000" expanded="true" signature="1899:1929" ph="..." />
           </folding>
         </state>
       </provider>
@@ -670,11 +691,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TweetMap/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="77" column="1440" lean-forward="false" selection-start-line="77" selection-start-column="1440" selection-end-line="77" selection-end-column="1440" />
+        <state relative-caret-position="528">
+          <caret line="285" column="67" lean-forward="false" selection-start-line="285" selection-start-column="67" selection-end-line="285" selection-end-column="67" />
           <folding>
             <element signature="n#style#0;n#div#1;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1492815040000" expanded="true" signature="1899:1925" ph="..." />
+            <element signature="n#style#0;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#p#0;n#main#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1492816936000" expanded="true" signature="1899:1929" ph="..." />
           </folding>
         </state>
       </provider>
