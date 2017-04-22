@@ -14,23 +14,18 @@ module.exports.Search = function(searchData, callback) {
         size: 10000,
         type: 'tweetdata_with_sentiment',
         q: searchData
-        // body: {
-        //     query: {
-        //         match: {
-        //             "text": searchData
-        //         }
-        //     }
-        // }
     }).then(function(resp) {
         console.log('Search Result for: ',searchData,' from Elasticsearch');
         console.log('Results being added to an array');
         resp.hits.hits.forEach(function(hit){
             tempArray = [];
-
-            // tempArray.push(hit)
+            //adding coordinates
             tempArray.push(hit['_source']['coordinates']['lat'],hit['_source']['coordinates']['lng'])
+            //adding tweet text
             tempArray.push(hit['_source']['text'])
+            //adding user info (name, pic)
             tempArray.push(hit['_source']['user']['name'],hit['_source']['user']['profile_image_url_https'])
+            //adding sentiment
             tempArray.push(hit['_source']['sentiment']['label'])
             outArray.push(tempArray);
         })

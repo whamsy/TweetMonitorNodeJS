@@ -35,7 +35,6 @@
             }else {
                 marker.setIcon('http://maps.google.com/mapfiles/ms/icons/yellow-dot.png')
             }
-
             return marker;
         }
 
@@ -136,15 +135,6 @@
 
                                 marker = marker_color(marker,data[i][5]);
 
-//                                if(data[i][5]== 'positive'){
-//                                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png')
-//                                }
-//                                else if(data[i][5]== "negative"){
-//                                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/red-dot.png')
-//                                }else {
-//                                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/yellow-dot.png')
-//                                }
-
                                 gmarkers.push(marker);
 
                                 google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
@@ -202,15 +192,6 @@
 
                                 marker = marker_color(marker,data[i][5]);
 
-//                                if(data[i][5]== 'positive'){
-//                                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png')
-//                                }
-//                                else if(data[i][5]== "negative"){
-//                                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/red-dot.png')
-//                                }else {
-//                                    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/yellow-dot.png')
-//                                }
-
                                 gmarkers.push(marker);
 
                                 google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
@@ -245,22 +226,6 @@
         font-size: 18px
     }
 
-
-    .button {
-        background-color:  #051028;
-        border: none;
-        color: white;
-        padding: 10px 25px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 15px;
-        margin: 4px 2px;
-        cursor: pointer;
-
-    }
-    .button {border-radius: 4px;}
-
 </style>
 
 
@@ -273,15 +238,7 @@
         <input type="button" id="text_value" value="Search!"/><br>
 
         <div id = "countdiv">
-            <!--<p id = "content">Tweet Count :<p/>-->
         </div>
-        <!--<script>-->
-            <!--var btn = document.createElement("BUTTON");-->
-            <!--var t = document.createTextNode("CLICK ME");-->
-            <!--btn.appendChild(t);-->
-            <!--document.body.appendChild(btn);-->
-        <!--</script>-->
-        <!-- <button onclick="renderSpecific()">Search!</button> -->
         <div id="map" style="width: 1350px; height: 500px; background-color: #051028"></div>
         <p style="color:#CFCECF; font-size:15px;"> Markers Legend: <span style="color:#24E54A;">Green: Positive, </span><span style="color:#F9645A;">Red: Negative, </span><span style="color:#FBF164;">Yellow: Neutral</span></p>
     </main>
